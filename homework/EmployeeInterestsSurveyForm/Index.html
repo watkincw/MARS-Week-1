@@ -7,6 +7,99 @@
     <title>Employee Interests Survey Form</title>
 </head>
 <body>
+
+    <h1>Employee Interests Survey Form</h1>
+
+    <form action="/homework/EmployeeInterestsSurveyForm/ThankYou.html" method="post">
+
+        <table>
+
+            <div>
+
+                <tr>
+                    <td>
+                        <label for="empName">Enter your name: </label>
+                    </td>
+                    <td>
+                        <input type="text" name="empName" id="empName" placeholder="ex. John Smith" required >
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="empDprtmnt">Enter your department: </label>
+                    </td>
+                    <td>
+                        <input type="text" name="empDprtmnt" id="empDprtmnt" placeholder="ex. Finance" required >
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="empAbout">Tell us a little about yourself: </label>
+                    </td>
+                    <td>
+                        <textarea name="empAbout" id="empAbout" cols="21" rows="5" placeholder="Short personal description" required ></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="empExercise">Do you exercise at home? </label>
+                    </td>
+                    <td>
+                        <input type="radio" name="empExerciseYes" id="empExerciseYes" value="Yes">
+                        <label for="empExerciseYes">Yes</label>
+                        <input type="radio" name="empExerciseNo" id="empExerciseNo" value="No">
+                        <label for="empExerciseNo">No</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="empReadPref">How do you like to read about your favorite topics?</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="books" id="books">
+                        <label for="books">Books</label>
+                        
+                        <input type="checkbox" name="webRes" id="webRes">
+                        <label for="webRes">Online Resources</label>
+
+                        <input type="checkbox" name="mobileApps" id="mobileApps">
+                        <label for="mobileApps">Phone Apps</label>
+
+                        <input type="checkbox" name="mags" id="mags">
+                        <label for="mags">Magazines</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="moviePref">What genre of movies do you like?</label>
+                    </td>
+                    <td>
+                        <select name="moviePref" id="moviePref">
+                            <option>Select...</option>
+                            <option value="comedy">Comedy</option>
+                            <option value="action">Action</option>
+                            <option value="disney">Disney</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" name="submit" id="submitSurvey">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="reset" name="resetForm" id="resetForm" value="Reset Form">
+                    </td>
+                </tr>
+
+            </div>
+
+        </table>
+
+    </form>
     
 </body>
 </html>
